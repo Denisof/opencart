@@ -1,0 +1,106 @@
+2015-12-12 1:15:20 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/opencart/admin/model/sale/customer_group.php! in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2015-12-12 1:31:24 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/opencart/admin/model/sale/customer_group.php! in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2015-12-12 1:43:29 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/opencart/admin/model/sale/customer_group.php! in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2015-12-12 1:52:44 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/opencart/admin/model/sale/customer_group.php! in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2015-12-12 1:52:48 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/opencart/admin/model/sale/customer_group.php! in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2015-12-12 2:02:04 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/opencart/admin/model/sale/customer_group.php! in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2015-12-12 22:39:50 - PHP Notice:  Undefined index: header in C:\OpenServer\domains\opencart\admin\view\template\module\d_social_login.tpl on line 97
+2015-12-13 1:43:38 - PHP Notice:  Undefined variable: settings in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php on line 28
+2015-12-13 1:43:39 - PHP Notice:  Undefined variable: settings in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php on line 28
+2015-12-13 1:43:39 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 1:44:29 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 1:45:11 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 1:45:20 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 1:46:23 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 17:50:39 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\opencart\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php(105): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\opencart\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\opencart\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\opencart\index.php(275): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2015-12-13 17:50:41 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\opencart\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php(105): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\opencart\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\opencart\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\opencart\index.php(275): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2015-12-13 17:50:43 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\opencart\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php(105): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\opencart\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\opencart\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\opencart\index.php(275): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2015-12-13 17:50:45 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Facebook.
+
+Trace:
+ #0 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Facebook->initialize()
+#1 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Facebook', Array, Array)
+#2 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Facebook', Array)
+#3 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Facebook', NULL)
+#4 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php(105): Hybrid_Auth::authenticate('Facebook')
+#5 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#6 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#7 C:\OpenServer\domains\opencart\system\engine\front.php(34): Action->execute(Object(Registry))
+#8 C:\OpenServer\domains\opencart\system\engine\front.php(29): Front->execute(Object(Action))
+#9 C:\OpenServer\domains\opencart\index.php(275): Front->dispatch(Object(Action), Object(Action))
+#10 {main}
+2015-12-13 17:50:47 - Missing provider application credentials.
+
+HybridAuth Error: Your application key and secret are required in order to connect to Twitter.
+
+Trace:
+ #0 C:\OpenServer\domains\opencart\system\library\Hybrid\Providers\Twitter.php(18): Hybrid_Provider_Model_OAuth1->initialize()
+#1 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Twitter->initialize()
+#2 C:\OpenServer\domains\opencart\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Twitter', Array, Array)
+#3 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Twitter', Array)
+#4 C:\OpenServer\domains\opencart\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Twitter', NULL)
+#5 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php(105): Hybrid_Auth::authenticate('Twitter')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\opencart\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\opencart\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\opencart\index.php(275): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2015-12-13 17:56:27 - PHP Notice:  Use of undefined constant status - assumed 'status' in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_module_d_social_login.tpl on line 2
+2015-12-13 17:58:31 - PHP Notice:  Undefined index: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php on line 29
+2015-12-13 18:07:28 - PHP Notice:  Undefined index: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_controller_module_d_social_login.php on line 29
+2015-12-13 18:07:28 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 18:07:35 - PHP Notice:  Undefined index: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-admin_view_template_module_d_social_login.tpl on line 78
+2015-12-13 18:07:52 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 18:46:41 - PHP Notice:  Array to string conversion in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 45
+2015-12-13 19:34:22 - PHP Notice:  Array to string conversion in C:\OpenServer\domains\opencart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 26

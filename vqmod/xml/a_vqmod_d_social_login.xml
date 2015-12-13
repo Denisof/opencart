@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>d_social_login</id>
+	<version>2.x</version>
+	<vqmver required="true">2.4.1</vqmver>
+	<author>dreamvention.com</author>
+	<files>
+	<file name="admin/model/customer/customer.php">
+		<operation error="skip" info="added to deleteCustomer customer_authentication delete">
+			<search position="after"><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "customer WHERE customer_id = '" . (int)$customer_id . "'");]]></search>
+			<add><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "customer_authentication WHERE customer_id = '" . (int)$customer_id . "'"); //vqmod_d_social_login.xml]]></add>
+		</operation>
+	</file>
+        
+        <file name="admin/controller/module/d_social_login.php">
+                <operation error="skip" info="">
+                        <search position="after"><![CDATA[$data['entry_name'] = $this->language->get('entry_name');]]></search>
+			<add><![CDATA[ $data['entry_header'] = $this->language->get('entry_header');]]></add>
+                </operation>
+        </file>
+        
+        <file name="admin/language/english/module/d_social_login.php">
+                <operation error="skip" info="">
+                        <search position="after"><![CDATA[$_['entry_name']                = 'Module name';]]></search>
+			<add><![CDATA[$_['entry_header']                    = 'Show in header';]]></add>
+                </operation>
+        </file>
+        
+        <file name="admin/view/template/module/d_social_login.tpl">
+                <operation error="skip" info="">
+                        <search position="after" offset="2"><![CDATA[<div id="setting_basic" class="tab-pane active">]]></search>
+			<add ><![CDATA[<div class="form-group">
+                      <label class="col-sm-2 control-label" for="input_header"><?php echo $entry_header; ?></label>
+                      <div class="col-sm-10">
+                        <input type="hidden" name="<?php echo $id;?>_setting[header]" value="0" />
+                        <input type="checkbox" name="<?php echo $id;?>_setting[header]" <?php echo ($setting['header'])? 'checked="checked"':'';?> value="1" id="input_header"/>
+                      </div>
+                  </div>]]></add>
+                </operation>
+        </file>
+        
+        
+        <file name="catalog/view/theme/default/template/module/d_social_login.tpl">
+                <operation error="skip" info="adds class to the div with id='social-login'">
+                        <search position="replace"><![CDATA[<div id="d_social_login">]]></search>
+			<add><![CDATA[<div id="d_social_login" class="nav pull-left">]]></add>
+                </operation>
+                <operation error="skip" info="">
+                        <search position="replace"><![CDATA[margin-bottom: 10px;]]></search>
+			<add><![CDATA[margin-bottom: 1px;]]></add>
+                </operation>
+        </file>
+        
+       
+        
+        <file name="catalog/controller/common/header.php">
+                <operation error="skip" info="">
+                        <search position="after"><![CDATA[$data['title'] = $this->document->getTitle();]]></search>
+			<add><![CDATA[
+                        $data['social']['view'] = $this->load->controller('module/d_social_login');
+                        $data['social']['status'] = $this->config->get('d_social_login_status');
+                        $social_settings = $this->config->get('d_social_login_setting');
+                        $data['social']['header'] = $social_settings['header'];
+                        ]]></add>
+                </operation>
+        </file>
+         
+        <file name="catalog/view/theme/default/template/common/header.tpl">
+                <operation error="skip" info="echo view of social_login in the header.tpl ">
+                        <search position="after"><![CDATA[<?php echo $language; ?>]]></search>
+			<add><![CDATA[<?php if ($social['status'] && $social['header'])echo $social['view']; ?>]]></add>
+                </operation>
+        </file>
+        
+        </files>
+</modification>
