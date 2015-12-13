@@ -50,11 +50,9 @@
 			<add><![CDATA[margin-bottom: 1px;]]></add>
                 </operation>
         </file>
-        
-       
-        
+              
         <file name="catalog/controller/common/header.php">
-                <operation error="skip" info="">
+                <operation error="skip" info="gets status of modul and takes a view">
                         <search position="after"><![CDATA[$data['title'] = $this->document->getTitle();]]></search>
 			<add><![CDATA[
                         $data['social']['view'] = $this->load->controller('module/d_social_login');
