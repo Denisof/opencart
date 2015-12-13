@@ -27,7 +27,7 @@
         </file>
         
         <file name="admin/view/template/module/d_social_login.tpl">
-                <operation error="skip" info="">
+                <operation error="skip" info="adds form in template">
                         <search position="after" offset="2"><![CDATA[<div id="setting_basic" class="tab-pane active">]]></search>
 			<add ><![CDATA[<div class="form-group">
                       <label class="col-sm-2 control-label" for="input_header"><?php echo $entry_header; ?></label>
