@@ -15,7 +15,7 @@ class ControllerModuleDSocialLogin extends Controller {
 
 		$this->language->load($this->route);
 		$this->load->model($this->route);
-       
+       //a coment
         $this->document->addStyle('catalog/view/theme/default/stylesheet/d_social_login/styles.css');
         $this->document->addScript('catalog/view/javascript/d_social_login/spin.min.js');
         
