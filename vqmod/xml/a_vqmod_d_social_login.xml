@@ -52,7 +52,7 @@
         </file>
               
         <file name="catalog/controller/common/header.php">
-                <operation error="skip" info="gets status of modul and takes a view">
+                <operation error="skip" info="gets status of a modul and  a view and assigns to an array ">
                         <search position="after"><![CDATA[$data['title'] = $this->document->getTitle();]]></search>
 			<add><![CDATA[
                         $data['social']['view'] = $this->load->controller('module/d_social_login');
@@ -64,7 +64,7 @@
         </file>
          
         <file name="catalog/view/theme/default/template/common/header.tpl">
-                <operation error="skip" info="echo view of social_login in the header.tpl ">
+                <operation error="skip" info="echo a view of social_login in the header.tpl ">
                         <search position="after"><![CDATA[<?php echo $language; ?>]]></search>
 			<add><![CDATA[<?php if ($social['status'] && $social['header'])echo $social['view']; ?>]]></add>
                 </operation>
